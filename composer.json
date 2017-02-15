@@ -1,5 +1,5 @@
 {
-    "name": "Sins1990/doctrine-cache-provider",
+    "name": "sins1990/doctrine-cache-provider",
     "description": "Doctrine cache provider for Silex framework",
     "license": "MIT",
     "type": "library",
