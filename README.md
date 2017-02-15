@@ -279,4 +279,6 @@ $container['doctrine.cache.options'] = array(
     ),
 );
 
+//getting the cache is the same as before
+
 ```
