@@ -223,3 +223,60 @@ $container['doctrine.cache.options'] = array(
 );
 
 ```
+
+Creating custom cache
+====
+
+For creating a new cache provider all you have to do is the following:
+- create the new CacheType
+- define the $container['doctrine.cache.factory.<new provider name>']
+- use the new provider in the config
+
+
+Creating the new Cache type
+
+```php
+
+<?php
+
+namespace Your\Name\Space;
+
+use Doctrine\Common\Cache\CacheProvider;
+
+class MyCustomCache extends CacheProvider
+{
+//class body with the required methods and functionality
+}
+
+```
+
+Create a factory for it
+
+```php
+
+//you have to define this BEFORE you get a new cache, preferably before registering the provider
+$container['doctrine.cache.factory.customcache'] = $container->protect(function ($cacheOptions) use ($container) {
+
+	$namespace = $cacheOptions["namespace"];
+
+	//
+
+	return new MyCustomCache();
+
+});
+
+```
+
+Use it
+
+```php
+
+$container['doctrine.cache.options'] = array(
+    'providers' => array(
+        'cache' => array(
+            'type' => 'customcache'
+        )
+    ),
+);
+
+```
