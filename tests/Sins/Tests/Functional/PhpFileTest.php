@@ -2,7 +2,7 @@
 
 namespace Sins\Tests\Functional;
 
-use Sins\Cache\DoctrineCacheServiceProvider;
+use SinSquare\Cache\DoctrineCacheServiceProvider;
 use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Cache\PhpFileCache;
 

@@ -1,5 +1,5 @@
 {
-    "name": "sins1990/doctrine-cache-provider",
+    "name": "sinsquare/doctrine-cache-provider",
     "description": "Doctrine cache provider for Silex framework",
     "license": "MIT",
     "type": "library",
@@ -9,7 +9,7 @@
         "silex/silex": "*"
     },
     "autoload": {
-        "psr-4": { "Sins\\Cache\\": "src/Sins/Cache" }
+        "psr-4": { "SinSquare\\Cache\\": "src/Sins/Cache" }
     },
     "autoload-dev": {
         "psr-4": { "Sins\\Tests\\": "tests/Sins/Tests" }

@@ -2,7 +2,7 @@
 
 namespace Sins\Tests;
 
-use Sins\Cache\DoctrineCacheServiceProvider;
+use SinSquare\Cache\DoctrineCacheServiceProvider;
 use Pimple\Container;
 use Doctrine\Common\Cache\VoidCache;
 

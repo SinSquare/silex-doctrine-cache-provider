@@ -1,6 +1,6 @@
 <?php
 
-namespace Sins\Cache;
+namespace SinSquare\Cache;
 
 use Doctrine\Common\Cache\ApcCache;
 use Doctrine\Common\Cache\ApcuCache;
