@@ -6,3 +6,4 @@ composer.phar
 .php_cs*
 project.*
 COMMANDS.md
+/var/
