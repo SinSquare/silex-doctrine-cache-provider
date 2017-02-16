@@ -1,5 +1,5 @@
 {
-    "name": "sinsquare/doctrine-cache-provider",
+    "name": "sinsquare/silex-doctrine-cache-provider",
     "description": "Doctrine cache provider for Silex framework",
     "license": "MIT",
     "type": "library",
