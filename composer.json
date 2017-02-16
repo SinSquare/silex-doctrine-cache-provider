@@ -12,7 +12,7 @@
         "psr-4": { "SinSquare\\Cache\\": "src/Sins/Cache" }
     },
     "autoload-dev": {
-        "psr-4": { "Sins\\Tests\\": "tests/Sins/Tests" }
+        "psr-4": { "SinSquare\\Tests\\": "tests/Sins/Tests" }
     },
     "minimum-stability": "dev",
     "extra": {

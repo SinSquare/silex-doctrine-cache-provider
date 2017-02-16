@@ -1,6 +1,6 @@
 <?php
 
-namespace Sins\Tests\Functional;
+namespace SinSquare\Tests\Functional;
 
 use Pimple\Container;
 use Doctrine\Common\Cache\CacheProvider;

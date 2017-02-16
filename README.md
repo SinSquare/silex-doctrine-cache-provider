@@ -24,7 +24,7 @@ First you have to create the condig for the cache, than you have to register the
 ```php
 <?php
 
-use Sins\Cache\DoctrineCacheServiceProvider;
+use SinSquare\Cache\DoctrineCacheServiceProvider;
 
 $container = new Container();
 $container['doctrine.cache.options'] = array(

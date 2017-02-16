@@ -1,6 +1,6 @@
 <?php
 
-namespace Sins\Tests\Functional;
+namespace SinSquare\Tests\Functional;
 
 abstract class AbstractFileCacheTest extends AbstractCacheTest
 {

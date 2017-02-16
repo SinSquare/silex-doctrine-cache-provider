@@ -1,6 +1,6 @@
 <?php
 
-namespace Sins\Tests;
+namespace SinSquare\Tests;
 
 use SinSquare\Cache\DoctrineCacheServiceProvider;
 use Pimple\Container;

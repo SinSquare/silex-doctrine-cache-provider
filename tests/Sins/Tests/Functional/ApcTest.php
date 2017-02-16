@@ -1,6 +1,6 @@
 <?php
 
-namespace Sins\Tests\Functional;
+namespace SinSquare\Tests\Functional;
 
 use SinSquare\Cache\DoctrineCacheServiceProvider;
 use Doctrine\Common\Cache\Cache;
