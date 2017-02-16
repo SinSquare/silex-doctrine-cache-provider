@@ -9,7 +9,7 @@ With composer :
 ``` json
 {
     "require": {
-        "sinsquare/doctrine-cache-provider": "1.*"
+        "sinsquare/silex-doctrine-cache-provider": "1.*"
     }
 }
 ```
