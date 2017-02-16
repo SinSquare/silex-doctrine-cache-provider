@@ -17,7 +17,7 @@ With composer :
 Usage
 =====
 
-You can you the provider with Pimple or Silex.
+You can use the provider with Pimple or Silex.
 
 First you have to create the condig for the cache, than you have to register the DoctrineCacheServiceProvider.
 
