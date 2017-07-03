@@ -31,7 +31,7 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
             $initialized = true;
 
             if (!isset($app['doctrine.cache.options'])) {
-                throw new \Exception("'doctrine.cache.options' not set, can't initialize!");
+                return;
             }
 
             $tmp = $app['doctrine.cache.options'];
@@ -194,6 +194,9 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
 
         //initilazie cache config
         $app['doctrine.cache.options.initializer']();
+        if(empty($app['doctrine.cache.options'])) {
+            return;
+        }
         //initilaize cache aliases
         foreach ($app['doctrine.cache.options']['aliases'] as $name => $alias) {
             $options = @$app['doctrine.cache.options']['providers'][$name];
