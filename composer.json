@@ -5,7 +5,7 @@
     "type": "library",
     "require": {
         "php": "~5.6|~7.0",
-        "doctrine/cache": "*",
+        "doctrine/cache": "^1.0",
         "pimple/pimple": "~3.0"
     },
     "require-dev": {

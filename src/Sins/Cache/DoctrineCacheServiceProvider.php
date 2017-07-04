@@ -109,9 +109,9 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
         });
 
         $app['doctrine.cache.factory.filesystem'] = $app->protect(function ($cacheOptions) {
-            $directory = @$cacheOptions['directory'];
-            $extension = @$cacheOptions['extension'];
-            $umask = @$cacheOptions['umask'];
+            $directory = $cacheOptions['directory'];
+            $extension = $cacheOptions['extension'];
+            $umask = $cacheOptions['umask'];
 
             if (empty($cacheOptions['directory'])) {
                 throw new \RuntimeException('FilesystemCache directory not defined');
@@ -162,9 +162,9 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
         });
 
         $app['doctrine.cache.factory.phpfile'] = $app->protect(function ($cacheOptions) {
-            $directory = @$cacheOptions['directory'];
-            $extension = @$cacheOptions['extension'];
-            $umask = @$cacheOptions['umask'];
+            $directory = $cacheOptions['directory'];
+            $extension = $cacheOptions['extension'];
+            $umask = $cacheOptions['umask'];
 
             if ($directory === null) {
                 throw new \RuntimeException('FilesystemCache directory not defined');
@@ -199,7 +199,7 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
         }
         //initilaize cache aliases
         foreach ($app['doctrine.cache.options']['aliases'] as $name => $alias) {
-            $options = @$app['doctrine.cache.options']['providers'][$name];
+            $options = $app['doctrine.cache.options']['providers'][$name];
             if (is_array($options)) {
                 $app[$alias] = function ($app) use ($name, $options) {
                     $cache = $app['doctrine.caches'][$name];
