@@ -197,11 +197,10 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
         if(empty($app['doctrine.cache.options'])) {
             return;
         }
-        //initilaize cache aliases
         foreach ($app['doctrine.cache.options']['aliases'] as $name => $alias) {
             $options = $app['doctrine.cache.options']['providers'][$name];
             if (is_array($options)) {
-                $app[$alias] = function ($app) use ($name, $options) {
+                $app[$alias] = function ($app) use ($name) {
                     $cache = $app['doctrine.caches'][$name];
 
                     return $cache;
