@@ -10,8 +10,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
-        "friendsofphp/php-cs-fixer": "^2.0",
-        "symfony/polyfill-apcu": "*"
+        "friendsofphp/php-cs-fixer": "^2.0"
     },
     "autoload": {
         "psr-4": { "SinSquare\\Cache\\": "src/Sins/Cache" }
