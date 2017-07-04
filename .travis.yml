@@ -8,9 +8,9 @@ php:
 sudo: false
 
 before_script:
-  - ./tests/res/install-apcu.sh
-  - phpenv config-add tests/res/$TRAVIS_PHP_VERSION.ini
-  - phpenv config-add tests/res/apc.ini
+  - if [[ $TRAVIS_PHP_VERSION = "5.6" ]]; then echo yes | pecl install apcu-4.0.11; fi
+  - if [[ $TRAVIS_PHP_VERSION = "7.0" ]]; then echo yes | pecl install apcu-5.1.5; fi
+  - if [[ $TRAVIS_PHP_VERSION = "7.1" ]]; then echo yes | pecl install apcu-5.1.8; fi
 
 install:
 - composer update --no-interaction --prefer-stable;
