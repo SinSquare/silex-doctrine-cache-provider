@@ -3,6 +3,7 @@ Doctrine cache provider for Silex framework
 
 [![Build Status](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider.svg?branch=master)](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c/big.png)](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c)
 
 Installation
 ============
