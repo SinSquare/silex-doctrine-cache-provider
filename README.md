@@ -1,6 +1,8 @@
 Doctrine cache provider for Silex framework
 =======
 
+[![Build Status](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider.svg?branch=master)](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider)
+
 Installation
 ============
 
