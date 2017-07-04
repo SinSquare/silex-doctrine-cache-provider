@@ -7,7 +7,7 @@ php:
 
 sudo: false
 
-before_install: echo "extension = apcu.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+before_install: phpenv config-add tests/$TRAVIS_PHP_VERSION.ini
 
 install:
 - composer update --no-interaction --prefer-stable;

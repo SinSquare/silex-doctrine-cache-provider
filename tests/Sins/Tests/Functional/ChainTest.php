@@ -17,10 +17,7 @@ class ChainTest extends AbstractCacheTest
             'providers' => array(
                 'cache' => array(
                     'type' => 'chain',
-                    'caches' => array('apc', 'apcu', 'array'),
-                ),
-                'apc' => array(
-                    'type' => 'apc',
+                    'caches' => array('apcu', 'array'),
                 ),
                 'apcu' => array(
                     'type' => 'apcu',
@@ -39,9 +36,6 @@ class ChainTest extends AbstractCacheTest
         $cache = $this->pimple['doctrine.caches']['cache'];
         $this->assertInstanceOf(ChainCache::class, $cache);
 
-        $apc = $this->pimple['doctrine.caches']['apc'];
-        $this->assertInstanceOf(ApcCache::class, $apc);
-
         $apcu = $this->pimple['doctrine.caches']['apcu'];
         $this->assertInstanceOf(ApcuCache::class, $apcu);
 
@@ -50,7 +44,6 @@ class ChainTest extends AbstractCacheTest
 
         $this->checkSaveAndRead($cache, $key, $value);
 
-        $this->assertSame($value, $apc->fetch($key));
         $this->assertSame($value, $apcu->fetch($key));
         $this->assertSame($value, $array->fetch($key));
     }
