@@ -10,8 +10,6 @@ sudo: false
 before_script:
   - if [ "$TRAVIS_PHP_VERSION" = "5.*" ]; then printf "\n" | pecl install apcu-4.0.10 && phpenv config-add .travis/phpenv/apcu-$TRAVIS_PHP_VERSION.ini; fi
   - if [ "$TRAVIS_PHP_VERSION" = "7.*" ]; then printf "\n" | pecl install apcu-beta && phpenv config-add .travis/phpenv/apcu-$TRAVIS_PHP_VERSION.ini; fi
-
-install:
-- composer update --no-interaction --prefer-stable;
+  - composer update --no-interaction --prefer-stable;
 
 script: vendor/bin/phpunit
