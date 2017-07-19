@@ -5,6 +5,8 @@ Doctrine cache provider for Silex framework
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c/big.png)](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d24d9a01c994a5e940cdf64defa8cf5)](https://www.codacy.com/app/SinSquare/silex-doctrine-cache-provider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SinSquare/silex-doctrine-cache-provider&amp;utm_campaign=Badge_Grade)
+
 Installation
 ============
 
