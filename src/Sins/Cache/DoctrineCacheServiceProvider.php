@@ -109,16 +109,14 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
         });
 
         $app['doctrine.cache.factory.filesystem'] = $app->protect(function ($cacheOptions) {
-            $directory = $cacheOptions['directory'];
-            $extension = $cacheOptions['extension'];
-            $umask = $cacheOptions['umask'];
-
+            
             if (empty($cacheOptions['directory'])) {
                 throw new \RuntimeException('FilesystemCache directory not defined');
             }
 
-            $extension = $extension === null ? FilesystemCache::EXTENSION : $extension;
-            $umask = $umask === null ? 0002 : $umask;
+            $directory = $cacheOptions['directory'];
+            $extension = empty($cacheOptions['extension']) ? FilesystemCache::EXTENSION : $cacheOptions['extension'];
+            $umask = empty($cacheOptions['umask']) ? 0002 : $cacheOptions['umask'];
 
             return new FilesystemCache($directory, $extension, $umask);
         });
@@ -162,17 +160,15 @@ class DoctrineCacheServiceProvider implements ServiceProviderInterface
         });
 
         $app['doctrine.cache.factory.phpfile'] = $app->protect(function ($cacheOptions) {
-            $directory = $cacheOptions['directory'];
-            $extension = $cacheOptions['extension'];
-            $umask = $cacheOptions['umask'];
 
-            if ($directory === null) {
+            if (empty($cacheOptions['directory'])) {
                 throw new \RuntimeException('FilesystemCache directory not defined');
             }
 
-            $extension = $extension === null ? PhpFileCache::EXTENSION : $extension;
-            $umask = $umask === null ? 0002 : $umask;
-
+            $directory = $cacheOptions['directory'];
+            $extension = empty($cacheOptions['extension']) ? FilesystemCache::EXTENSION : $cacheOptions['extension'];
+            $umask = empty($cacheOptions['umask']) ? 0002 : $cacheOptions['umask'];
+            
             return new PhpFileCache($directory, $extension, $umask);
         });
 
