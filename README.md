@@ -1,11 +1,11 @@
 Doctrine cache provider for Silex framework
 =======
 
-[![Build Status](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider.svg?branch=master)](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider)
-
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c/big.png)](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c)
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d24d9a01c994a5e940cdf64defa8cf5)](https://www.codacy.com/app/SinSquare/silex-doctrine-cache-provider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SinSquare/silex-doctrine-cache-provider&amp;utm_campaign=Badge_Grade)
+| Code quality | Tests | Issues |
+|--------------|-------|--------|
+| [![SensioLabsInsight](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c/big.png)](https://insight.sensiolabs.com/projects/4a2cacf8-9f49-43e3-8a36-6f3c4834835c) | [![Build Status](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider.svg?branch=master)](https://travis-ci.org/SinSquare/silex-doctrine-cache-provider) | [![Issue Count](https://codeclimate.com/github/SinSquare/silex-doctrine-cache-provider/badges/issue_count.svg)](https://codeclimate.com/github/SinSquare/silex-doctrine-cache-provider/issues) |
+| [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d24d9a01c994a5e940cdf64defa8cf5)](https://www.codacy.com/app/SinSquare/silex-doctrine-cache-provider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SinSquare/silex-doctrine-cache-provider&amp;utm_campaign=Badge_Grade) | [![Test Coverage](https://codeclimate.com/github/SinSquare/silex-doctrine-cache-provider/badges/coverage.svg)](https://codeclimate.com/github/SinSquare/silex-doctrine-cache-provider/coverage) |     |
+| [![Code Climate](https://codeclimate.com/github/SinSquare/silex-doctrine-cache-provider/badges/gpa.svg)](https://codeclimate.com/github/SinSquare/silex-doctrine-cache-provider) |   |   |
 
 Installation
 ============
