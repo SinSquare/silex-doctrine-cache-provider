@@ -10,8 +10,14 @@ before_script:
   - if [[ "$(php -v | grep 'PHP 5')" ]]; then yes | pecl install -f apcu-4.0.8; fi
   - if [[ "$(php -v | grep 'PHP 7')" ]]; then yes | pecl install -f apcu; fi
   - phpenv config-add tests/apc.ini
-  - composer update --no-interaction --prefer-stable
-  - php -i | grep 'apc'
+
+install:
+- "composer require codeclimate/php-test-reporter --dev"
+- "composer update --no-interaction --prefer-stable"
 
 script:
-  - vendor/bin/phpunit
+- vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_script:
+- CODECLIMATE_REPO_TOKEN="8b6c0ab6ca165356e37751f07ba586fbd224a7c60fd320e8574c311427cad203" vendor/bin/test-reporter --stdout > codeclimate.json
+- "curl -X POST -d @codeclimate.json -H 'Content-Type: application/json' -H 'User-Agent: Code Climate (PHP Test Reporter v0.1.1)' https://codeclimate.com/test_reports"
