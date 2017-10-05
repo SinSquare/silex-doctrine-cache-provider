@@ -1,5 +1,5 @@
 {
-    "name": "sinsquare/silex-doctrine-cache-provider",
+    "name": "subbeta/silex-doctrine-cache-provider",
     "description": "Doctrine cache provider for Silex framework",
     "license": "MIT",
     "type": "library",
@@ -13,10 +13,10 @@
         "friendsofphp/php-cs-fixer": "^2.0"
     },
     "autoload": {
-        "psr-4": { "SinSquare\\Cache\\": "src/Sins/Cache" }
+        "psr-4": { "SubBeta\\Cache\\": "src/Sub/Cache" }
     },
     "autoload-dev": {
-        "psr-4": { "SinSquare\\Tests\\": "tests/Sins/Tests" }
+        "psr-4": { "SubBeta\\Tests\\": "tests/Sub/Tests" }
     },
     "minimum-stability": "stable",
     "extra": {
